@@ -2,7 +2,7 @@
 
 namespace Zenepay\BahtText;
 
-class BahtText
+class Baht
 {
 
     const NUM_WORDS = ['ศูนย์', 'หนึ่ง', 'สอง', 'สาม', 'สี่', 'ห้า', 'หก', 'เจ็ด', 'แปด', 'เก้า'];
@@ -10,7 +10,7 @@ class BahtText
     const CURRENCY_UNIT = 'บาท';
     const CURRENCY_SUB_UNIT = 'สตางค์';
 
-    public static function make(float|int|string $number): ?string
+    public static function toText(float|int|string $number): ?string
     {
         $number = static::validate($number); // return as string
         if ($number === null) {

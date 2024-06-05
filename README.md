@@ -21,10 +21,10 @@ composer require zenepay/baht-text
 Support input of valid money format without symbol eg. 1,000,20.50
 
 ```php
-use Zenepay\BahtText;
+use Zenepay\BahtText\Baht;
 
 $totalAmount = '2,010,025.25';
-echo BahtText::make($totalAmount); // 'สองล้านหนึ่งหมื่นยี่สิบห้าบาทยี่สิบห้าสตางค์'
+echo Baht::toText($totalAmount); // 'สองล้านหนึ่งหมื่นยี่สิบห้าบาทยี่สิบห้าสตางค์'
 ```
 # validate input format with 
 
@@ -59,10 +59,10 @@ composer require zenepay/baht-text
 
 ## การใช้งาน
 ```php
-use Zenepay\BahtText;
+use Zenepay\BahtText\Baht;
 
 $totalAmount = '2,010,025.25';
-echo BahtText::make($totalAmount); // 'สองล้านหนึ่งหมื่นยี่สิบห้าบาทยี่สิบห้าสตางค์'
+echo Baht::toText($totalAmount); // 'สองล้านหนึ่งหมื่นยี่สิบห้าบาทยี่สิบห้าสตางค์'
 ```
 รองรับค่า input ที่เป็นจำนวนเงินที่ถูกต้อง มีคอมม่าหรือไม่มีก็ได้ ได้ทั้ง ติดลบและบวก
 ## ดูตัวอย่างในบิล
