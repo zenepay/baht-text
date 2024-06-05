@@ -3,7 +3,7 @@
 namespace Zenepay\BahtText\tests;
 
 use Exception;
-use Tests\TestCase;
+use PHPUnit\Framework\TestCase;
 use Zenepay\BahtText\BahtText;
 
 class BahtTextTest extends TestCase

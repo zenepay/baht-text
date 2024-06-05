@@ -7,4 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Zenepay\\BahtText\\' => array($baseDir . '/src'),
+    'Tests\\' => array($baseDir . '/tests'),
+    'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
+    'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
 );
