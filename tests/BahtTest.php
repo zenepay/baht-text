@@ -23,6 +23,8 @@ class BahtTest extends TestCase
         $inValidNumber2 = 'a2001,000.2';
         $this->expectException(Exception::class);
         $this->assertNull(Baht::validate($inValidNumber2));
+        $emptyText = '';
+        $this->assertEmpty(Baht::toText($emptyText));
     }
     public function test_validate_and_format_with_comma(): void
     {

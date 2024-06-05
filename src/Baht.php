@@ -10,12 +10,14 @@ class Baht
     const CURRENCY_UNIT = 'บาท';
     const CURRENCY_SUB_UNIT = 'สตางค์';
 
-    public static function toText(float|int|string $number): ?string
+    public static function toText(mixed $number): ?string
     {
-        $number = static::validate($number); // return as string
-        if ($number === null) {
-            return null;
+        if ($number === null || $number === '') {
+            return '';
         }
+
+        $number = static::validate($number); // return as string
+
         list($bahts, $stangs) = explode('.', $number, 2);
         if (intval($bahts) == 0 && intval($stangs) != 0) {
             $bahtWords = '';
