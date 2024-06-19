@@ -17,7 +17,7 @@ composer require zenepay/baht-text
 ```
 
 ## Usage
-### Just directly call make function statically
+### Just simply calls the static function toText()
 Support input of valid money format without symbol eg. 1,000,20.50
 
 ```php
@@ -28,8 +28,11 @@ echo Baht::toText($totalAmount); // 'สองล้านหนึ่งหม�
 ```
 # validate input format with 
 
-filter_var($number, FILTER_VALIDATE_FLOAT, FILTER_FLAG_ALLOW_THOUSAND)
-So, it should accept string, float value with thousand comma and negative number
+-10000.23 // true
+1,000.23 // true
+-1,000.23 // true
+1,0000,234.00  //false
+ู฿1,999,123.33 //false
 
 ## Demo & Show Case
 

@@ -39,7 +39,6 @@ class Baht
         $number = is_numeric($number) ? sprintf('%01.2F', $number) : trim($number);
         if (filter_var($number, FILTER_VALIDATE_FLOAT, FILTER_FLAG_ALLOW_THOUSAND) === false) {
             throw new \Exception('Invalid number format');
-            return null;
         }
         $number = str_replace(',', '', $number); // remove comma
         $strNumber = sprintf('%01.2F', floatval($number));
@@ -66,12 +65,11 @@ class Baht
         }
 
         $pos = (strlen($number) - 1) % 6;
-        //dd($pos);
+
         $digits = str_split($number);
         $numbers = '';
         $numText = '';
         foreach ($digits as $key => $value) {
-            // echo ($value);
             $numbers .= $value;
             $value = intval($value);
 
