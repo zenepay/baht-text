@@ -1,9 +1,9 @@
 # Baht Text: spell baht money from number to text
 
-[![Latest Stable Version](http://poser.pugx.org/zenepay/baht-text/v)](https://packagist.org/packages/zenepay/baht-text)
-[![Total Downloads](http://poser.pugx.org/zenepay/baht-text/downloads)](https://packagist.org/packages/zenepay/baht-text) 
-[![License](http://poser.pugx.org/zenepay/baht-text/license)](https://packagist.org/packages/zenepay/baht-text) 
-[![PHP Version Require](http://poser.pugx.org/zenepay/baht-text/require/php)](https://packagist.org/packages/zenepay/baht-text)
+[![Latest Stable Version](https://poser.pugx.org/zenepay/baht-text/v)](https://packagist.org/packages/zenepay/baht-text)
+[![Total Downloads](https://poser.pugx.org/zenepay/baht-text/downloads)](https://packagist.org/packages/zenepay/baht-text)
+[![License](https://poser.pugx.org/zenepay/baht-text/license)](https://packagist.org/packages/zenepay/baht-text)
+[![PHP Version Require](https://poser.pugx.org/zenepay/baht-text/require/php)](https://packagist.org/packages/zenepay/baht-text)
 
 This package helps to translate baht amount to text. This should be useful for Invoice, Receipts in Thai baht<br>
 
@@ -26,7 +26,7 @@ use Zenepay\BahtText\Baht;
 $totalAmount = '2,010,025.25';
 echo Baht::toText($totalAmount); // 'สองล้านหนึ่งหมื่นยี่สิบห้าบาทยี่สิบห้าสตางค์'
 ```
-# validate input format with 
+# validate input format with
 
 -10000.23 // true
 1,000.23 // true
@@ -41,7 +41,7 @@ echo Baht::toText($totalAmount); // 'สองล้านหนึ่งหม�
 - password: demo1234
 
 ## Credits
-s
+
 - [zenepay](https://github.com/zenepay)
 - [All Contributors](../../contributors)
 
@@ -50,7 +50,7 @@ s
 The MIT License (MIT)
 
 
-# Baht Text: ใช้เพื่อแปลงตัวเลขเงินบาท ให้เป็นข้อความอ่าน 
+# Baht Text: ใช้เพื่อแปลงตัวเลขเงินบาท ให้เป็นข้อความอ่าน
 เช่น  '2,010,025.25' ==> 'สองล้านหนึ่งหมื่นยี่สิบห้าบาทยี่สิบห้าสตางค์'
 
 ## การติดตั้ง
